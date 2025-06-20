@@ -134,3 +134,14 @@ Follow the steps below to set up and run the project locally
 ```
 http://localhost:5000/
 ```
+
+## Submission
+
+- **GitHub Repository Link:**  
+  [Your GitHub Repo]
+
+- **Live Deployment Link:**  
+  [Live Demo]
+
+- **Video Explanation (Public Link):**  
+  [Video Explanation]
