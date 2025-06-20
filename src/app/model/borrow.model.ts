@@ -38,18 +38,20 @@ const schemaBorrow = new Schema<IBorrow>(
 schemaBorrow.pre("save", async function (next) {
   try {
     const borrow = this as IBorrow;
-    const book = await books.findById(borrow.book);
-    if (!book) {
-      throw new Error("book not found");
-    }
-    if (book.copies < borrow.quantity) {
-      throw new Error(`not enough copies available! Copies : ${book.copies}`);
-    }
-    book.copies -= borrow.quantity;
-    if (book.copies === 0) {
-      book.available = false;
-    }
-    await book.save();
+    // const book = await books.findById(borrow.book);
+    // if (!book) {
+    //   throw new Error("book not found");
+    // }
+    // if (book.copies < borrow.quantity) {
+    //   throw new Error(`not enough copies available! Copies : ${book.copies}`);
+    // }
+    // book.copies -= borrow.quantity;
+    // if (book.copies === 0) {
+    //   book.available = false;
+    // }
+    // await book.save();
+
+    await books.updateCopies(borrow.book.toString(), borrow.quantity);
     next();
   } catch (error) {
     next(error as Error);
