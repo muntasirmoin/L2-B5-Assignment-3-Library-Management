@@ -30,6 +30,27 @@ borrowRoute.get("/", async (req: Request, res: Response, next) => {
           totalQuantity: { $sum: "$quantity" },
         },
       },
+      {
+        $lookup: {
+          from: "books",
+          localField: "_id",
+          foreignField: "_id",
+          as: "bookDetails",
+        },
+      },
+      {
+        $unwind: "$bookDetails",
+      },
+      {
+        $project: {
+          _id: 0,
+          totalQuantity: 1,
+          book: {
+            title: "$bookDetails.title",
+            isbn: "$bookDetails.isbn",
+          },
+        },
+      },
     ]);
 
     res.status(201).json({
