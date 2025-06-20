@@ -34,24 +34,24 @@ This project is managing a library system. It supports operations like adding, u
 src/ </br>
 │ </br>
 ├── app/ </br>
-│ ├── controller/
-│ │ ├── books.controller.ts
-│ │ └── borrow.controller.ts
-│ │
-│ ├── interface/
-│ │ ├── books.interface.ts
-│ │ └── borrow.interface.ts
-│ │
-│ ├── middlewares/
-│ │ └── globalErrorHandler.ts
-│ │
-│ ├── model/
-│ ├── books.model.ts
-│ └── borrow.model.ts  
-│  
-│
-├── config/
-│ └── index.ts
-│
-├── app.ts
-└── server.ts
+│ ├── controller/ </br>
+│ │ ├── books.controller.ts </br>
+│ │ └── borrow.controller.ts </br>
+│ │ </br>
+│ ├── interface/ </br>
+│ │ ├── books.interface.ts </br>
+│ │ └── borrow.interface.ts </br>
+│ │ </br>
+│ ├── middlewares/ </br>
+│ │ └── globalErrorHandler.ts </br>
+│ │ </br>
+│ ├── model/ </br>
+│ ├── books.model.ts </br>
+│ └── borrow.model.ts </br>
+│ </br>
+│ </br>
+├── config/ </br>
+│ └── index.ts </br>
+│ </br>
+├── app.ts </br>
+└── server.ts </br>
