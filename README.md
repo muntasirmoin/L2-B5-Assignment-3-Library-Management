@@ -74,9 +74,8 @@ src/ </br>
 │ │ └── borrow.interface.ts </br>
 │ │ </br>
 │ ├── middlewares/ </br>
+│ │ ├── notFoundHandler.ts </br>
 │ │ └── globalErrorHandler.ts </br>
-| | | </br>
-| | └── notFoundHandler.ts </br>
 │ │ </br>
 │ ├── model/ </br>
 │ ├── books.model.ts </br>
