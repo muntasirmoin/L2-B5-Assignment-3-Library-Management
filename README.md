@@ -14,3 +14,17 @@ git push origin main -->
 This project is managing a library system. It supports operations like adding, updating, deleting, and retrieving books, as well as borrowing books also tracking books & borrow records.
 
 ---
+
+## ✅ RESTful API Overview
+
+| Sl  | Method | Endpoint           | Description             |
+| --- | ------ | ------------------ | ----------------------- |
+| 1   | POST   | /api/books         | Create a new Book       |
+| 2   | GET    | /api/books         | Get all book            |
+| 3   | GET    | /api/books/:bookId | Create book by id       |
+| 4   | PUT    | /api/books/:bookId | Update an existing book |
+| 5   | DELETE | /api/books/:bookId | Delete a book           |
+| 6   | POST   | /api/borrow        | Create Borrow a book    |
+| 7   | GET    | /api/borrow        | Borrowed books summary  |
+
+---
