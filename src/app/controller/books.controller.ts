@@ -75,7 +75,6 @@ booksRoute.get("/:bookId", async (req: Request, res: Response, next) => {
 });
 
 // 4. Update Book
-// PUT /api/books/:bookId
 
 booksRoute.put("/:bookId", async (req: Request, res: Response, next) => {
   try {
@@ -97,7 +96,6 @@ booksRoute.put("/:bookId", async (req: Request, res: Response, next) => {
 });
 
 // 5. Delete Book
-// DELETE /api/books/:bookId
 
 booksRoute.delete("/:bookId", async (req: Request, res: Response, next) => {
   try {

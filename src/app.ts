@@ -7,15 +7,15 @@ import { notFoundHandler } from "./app/middlewares/notFoundHandler";
 const app: Application = express();
 app.use(express.json());
 
+app.get("/", (req: Request, res: Response) => {
+  res.send("welcome to library Management App");
+});
+
 app.use("/api/books", booksRoute);
 app.use("/api/borrow", borrowRoute);
 
 app.use(notFoundHandler);
 
 app.use(globalErrorhandler);
-
-app.get("/", (req: Request, res: Response) => {
-  res.send("welcome to library Management App");
-});
 
 export default app;
