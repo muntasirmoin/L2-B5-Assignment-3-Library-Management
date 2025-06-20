@@ -2,41 +2,56 @@ import { model, Schema } from "mongoose";
 import { BookModel, IBook } from "../interface/books.interface";
 import { boolean, string } from "zod";
 import { IBorrow } from "../interface/borrow.interface";
+import validator from "validator";
 
 const booksSchema = new Schema<IBook, BookModel>(
   {
     title: {
       type: String,
-      required: true,
+      required: [true, "Title is required"],
+      trim: true,
     },
     author: {
       type: String,
-      required: true,
+      required: [true, "Author is required"],
+      trim: true,
     },
     genre: {
       type: String,
-      required: true,
-      enum: [
-        "FICTION",
-        "NON_FICTION",
-        "SCIENCE",
-        "HISTORY",
-        "BIOGRAPHY",
-        "FANTASY",
-      ],
+      required: [true, "Genre is Required"],
+      enum: {
+        values: [
+          "FICTION",
+          "NON_FICTION",
+          "SCIENCE",
+          "HISTORY",
+          "BIOGRAPHY",
+          "FANTASY",
+        ],
+        message: "{VALUE] is not valid genre",
+      },
     },
     isbn: {
       type: String,
       required: true,
       unique: true,
+      validate: {
+        validator: (value: string) => validator.isISBN(value),
+        message: `Invalid ISBN format`,
+      },
     },
     description: {
       type: String,
+      trim: true,
     },
     copies: {
       type: Number,
       required: true,
       min: [0, "Copies must be a positive number"],
+      validate: {
+        validator: Number.isInteger,
+        message: "Copies must be a positive number",
+      },
     },
     available: {
       type: Boolean,
