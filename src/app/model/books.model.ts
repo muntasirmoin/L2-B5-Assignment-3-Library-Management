@@ -28,7 +28,7 @@ const booksSchema = new Schema<IBook, BookModel>(
           "BIOGRAPHY",
           "FANTASY",
         ],
-        message: "{VALUE] is not valid genre",
+        message: "It is not valid genre",
       },
     },
     isbn: {

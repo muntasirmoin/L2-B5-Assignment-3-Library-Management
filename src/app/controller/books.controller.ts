@@ -83,6 +83,7 @@ booksRoute.put("/:bookId", async (req: Request, res: Response, next) => {
     const updateBody = req.body;
     const data = await books.findByIdAndUpdate(updateBookId, updateBody, {
       new: true,
+      runValidators: true,
     });
     console.log(updateBookId, updateBody, data);
     res.status(200).json({
