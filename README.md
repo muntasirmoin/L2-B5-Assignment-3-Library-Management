@@ -33,7 +33,7 @@ This project is managing a library system. It supports operations like adding, u
 
 - **1. 📚 Create a Book**
 
-- Add a new book to the library book collection.
+  - Add a new book to the library book collection.
 
 - **2. 🔍 Get All Books**
 
@@ -86,3 +86,51 @@ src/ </br>
 │ </br>
 ├── app.ts </br>
 └── server.ts </br>
+
+## 🛠️ Local Setup Instructions
+
+Follow the steps below to set up and run the project locally
+
+### 📦 Installation Steps
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/muntasirmoin/L2-B5-Assignment-3-Library-Management.git
+   ```
+
+2. **Install Dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Create Environment Variables File**
+
+   Create a `.env` file in the root directory and add the following:
+
+   ```env
+   PORT=5000
+   DATABASE_URL=database_url
+   ```
+
+   > ⚠️ Replace the `DATABASE_URL` with MongoDB connection string.
+
+4. **Start the Development Server**
+
+   ```bash
+   npm run dev
+   ```
+
+   You should see output like:
+
+   ```
+    Library Management Connected to mongodb using mongoes
+    Library Management Running on port 5000
+   ```
+
+### 🔗 API Base URL
+
+```
+http://localhost:5000/
+```
