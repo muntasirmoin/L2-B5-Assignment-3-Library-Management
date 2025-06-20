@@ -31,9 +31,9 @@ This project is managing a library system. It supports operations like adding, u
 
 ## 📂 Structure Overview
 
-src/
-│
-├── app/
+src/ </br>
+│ </br>
+├── app/ </br>
 │ ├── controller/
 │ │ ├── books.controller.ts
 │ │ └── borrow.controller.ts
