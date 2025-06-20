@@ -75,6 +75,7 @@ src/ </br>
 │ │ </br>
 │ ├── middlewares/ </br>
 │ │ └── globalErrorHandler.ts </br>
+| | | </br>
 | | └── notFoundHandler.ts </br>
 │ │ </br>
 │ ├── model/ </br>
