@@ -29,6 +29,37 @@ This project is managing a library system. It supports operations like adding, u
 
 ---
 
+## 🚀 Features
+
+- **1. 📚 Create a Book**
+
+- Add a new book to the library book collection.
+
+- **2. 🔍 Get All Books**
+
+  - Retrieve a list of books. Supports filtering, sorting, and limiting.
+
+- **3. 🔍 Get Book by ID**
+
+  - Get detailed information of a single book.
+
+- **4. ✏️ Update Book**
+
+  - Update book information like the number of copies.
+
+- **5. ❌ Delete Book**
+
+  - Remove a book from the book collection.
+
+- **6. 📊 Borrow a Book**
+
+  - Record a borrowing book, update available status, deduct book copies base on borrow quantity .
+
+- **7. 📊 Borrowed Books Summary**
+  - View total quantities borrowed per book, with book titles and isbn using aggregation.
+
+---
+
 ## 📂 Structure Overview
 
 src/ </br>
