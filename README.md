@@ -75,6 +75,7 @@ src/ </br>
 │ │ </br>
 │ ├── middlewares/ </br>
 │ │ └── globalErrorHandler.ts </br>
+| | └── notFoundHandler.ts </br>
 │ │ </br>
 │ ├── model/ </br>
 │ ├── books.model.ts </br>
@@ -131,9 +132,9 @@ Follow the steps below to set up and run the project locally
 
 ### 🔗 API Base URL
 
-```
-http://localhost:5000/
-```
+    ```
+        http://localhost:5000/
+    ```
 
 ## Submission
 
