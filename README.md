@@ -142,7 +142,7 @@ Follow the steps below to set up and run the project locally
   [Your GitHub Repo]
 
 - **Live Deployment Link:**  
-  [Live Demo]
+  [Live Demo] ( library-management-chi-rust.vercel.app )
 
 - **Video Explanation (Public Link):**  
   [Video Explanation]
