@@ -3,6 +3,7 @@ import { BookModel, IBook } from "../interface/books.interface";
 import { boolean, string } from "zod";
 import { IBorrow } from "../interface/borrow.interface";
 import validator from "validator";
+import { borrow } from "./borrow.model";
 
 const booksSchema = new Schema<IBook, BookModel>(
   {
@@ -81,5 +82,11 @@ booksSchema.statics.updateCopies = async function (
   }
   await book.save();
 };
+
+booksSchema.post("findOneAndDelete", async function (doc) {
+  if (doc) {
+    await borrow.deleteMany({ book: doc._id });
+  }
+});
 
 export const books = model<IBook, BookModel>("books", booksSchema);
