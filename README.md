@@ -139,10 +139,10 @@ Follow the steps below to set up and run the project locally
 ## Submission
 
 - **GitHub Repository Link:**  
-  [Your GitHub Repo] (https://github.com/muntasirmoin/L2-B5-Assignment-3-Library-Management.git)
+  [GitHub Repo] (https://github.com/muntasirmoin/L2-B5-Assignment-3-Library-Management.git)
 
 - **Live Deployment Link:**  
   [Live Demo] (https://library-management-chi-rust.vercel.app/)
 
 - **Video Explanation (Public Link):**  
-  [Video Explanation] ()
+  [Video Explanation] (https://drive.google.com/file/d/1YVxN2llqzTIt2KsWddtgSvOGMGKAwJjl/view?usp=drive_link)
